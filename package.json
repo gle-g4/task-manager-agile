@@ -1,0 +1,14 @@
+{
+  "name": "task-manager-agile",
+  "version": "1.0.0",
+  "description": "Sistema de gerenciamento de tarefas ágeis - TechFlow Solutions",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node src/server.js",
+    "test": "node tests/test.js"
+  },
+  "keywords": ["task", "manager", "agile", "kanban"],
+  "author": "gle-g4",
+  "license": "MIT"
+}

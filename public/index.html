@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechFlow Solutions - Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 TechFlow Solutions</h1>
+            <p>Sistema de Gerenciamento de Tarefas Ágeis</p>
+            <div class="project-info">
+                <span class="badge">Metodologia: Kanban</span>
+                <span class="badge">GitHub Projects</span>
+                <span class="badge">Ágil</span>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-card">
+                <h3>📋 Total de Tarefas</h3>
+                <span id="total-tasks">0</span>
+            </div>
+            <div class="stat-card">
+                <h3>✅ Concluídas</h3>
+                <span id="done-tasks">0</span>
+            </div>
+            <div class="stat-card">
+                <h3>🔄 Em Progresso</h3>
+                <span id="progress-tasks">0</span>
+            </div>
+        </div>
+
+        <div class="kanban-board">
+            <div class="column todo-column">
+                <div class="column-header">
+                    <h3>⏳ A Fazer</h3>
+                    <span class="task-count" id="todo-count">0</span>
+                </div>
+                <div class="tasks" id="todo-tasks"></div>
+            </div>
+            
+            <div class="column progress-column">
+                <div class="column-header">
+                    <h3>🔄 Em Progresso</h3>
+                    <span class="task-count" id="progress-count">0</span>
+                </div>
+                <div class="tasks" id="progress-tasks"></div>
+            </div>
+            
+            <div class="column done-column">
+                <div class="column-header">
+                    <h3>✅ Concluído</h3>
+                    <span class="task-count" id="done-count">0</span>
+                </div>
+                <div class="tasks" id="done-tasks"></div>
+            </div>
+        </div>
+
+        <div class="add-task-section">
+            <h3>➕ Adicionar Nova Tarefa</h3>
+            <div class="task-form">
+                <input type="text" id="task-title" placeholder="Título da tarefa">
+                <textarea id="task-desc" placeholder="Descrição da tarefa"></textarea>
+                <select id="task-priority">
+                    <option value="low">📗 Baixa Prioridade</option>
+                    <option value="medium">📒 Média Prioridade</option>
+                    <option value="high">📕 Alta Prioridade</option>
+                </select>
+                <button onclick="adicionarTarefa()">Adicionar Tarefa</button>
+            </div>
+        </div>
+
+        <div class="github-info">
+            <h3>🔗 Integração GitHub</h3>
+            <p>Este projeto simula um ambiente ágil completo com:</p>
+            <ul>
+                <li>✅ Quadro Kanban (GitHub Projects)</li>
+                <li>✅ Controle de versão (Git)</li>
+                <li>✅ Integração contínua (GitHub Actions)</li>
+                <li>✅ Metodologias Ágeis</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
