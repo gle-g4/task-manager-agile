@@ -4,7 +4,7 @@ const path = require('path');
 const url = require('url');
 
 // Porta do servidor 
-const PORT = 3001;
+const PORT = process.env.PORT || 8080;
 
 // Dados simulados do sistema
 let tasks = [
