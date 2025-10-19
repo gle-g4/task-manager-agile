@@ -89,4 +89,5 @@ cd task-manager-agile
 node src/server.js
 
 # 4. Acesse no navegador
-http://localhost:3001
+http://localhost:8080
+
